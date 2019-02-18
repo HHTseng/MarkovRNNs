@@ -8,10 +8,10 @@ This repository is the PyTorch implementation of [Markov Recurrent Neural Networ
 <img src="./fig/NTMCell.png" width="100%">
 
 
-- **Heuristic explanation**:
+- **Heuristic explanation:**
 MRNN is built as a deep learning model for time series, such as NLP, weather, and stock price prediction. The main idea is to create several *parallel* [RNNs](https://en.wikipedia.org/wiki/Recurrent_neural_network) [(LSTMs)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to learn the time dependence of the data simultaneously. If data has complex temporal structures (behaviour), single RNN may not be enough to carry out the pattern. *k* parallel RNNs (*k=1,2,3,...*) can read same input signal at the same time, each learns different character of data. Then another latent variable *z* (also trained by networks) will determine when and which LSTM should be listened for attaining learning task (see Fig *q_z(t)* & *z(t)* below). The choosing mechanism by *z* itself is a process stochastic modeling of transitions between *k* LSTMs based on Markov property, and hence the name MRNN.
 
-- Note:
+- **Note:**
 The transition variable z between *k* LSTMs can regarded as an [attention mechanism](https://nlp.stanford.edu/pubs/emnlp15_attn.pdf) over individual LSTM hidden states.
 
 
@@ -63,9 +63,9 @@ MRNN_detect_alien_signal.ipynb
 <img src="./fig/qz_t_wave1.png" width="100%">
 
 - Over all probability of which LSTM being chosen
-<img src="./fig/digit9_transition.png" width="55%">
+<img src="./fig/waves_transition.png" width="100%">
 
 
 
 ## Improvements
-This code in Pytorch is extended such that the Markov RNN can have more than 1 hidden layers, where it was restricted to only 1 hidden layer in the original code of [Tensorflow version](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git).
+This code of Pytorch is extended such that the Markov RNN can have more than 1 hidden layers in LSTMs, where it was restricted to only 1 hidden layer in the original code of [Tensorflow version](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git).
