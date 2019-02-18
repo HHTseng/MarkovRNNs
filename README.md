@@ -3,16 +3,16 @@
 This repository is the PyTorch implementation of [Markov Recurrent Neural Networks](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git) with two temporal datasets as quick demonstration.
 
 ## Architecture
-**Paper**:(https://ieeexplore.ieee.org/document/8517074)
+**Paper**:[Markov Recurrent Neural Networks](https://ieeexplore.ieee.org/document/8517074)
 
-<img src="./fig/NTMCell.png" width="90%">
-
+<img src="./fig/NTMCell.png" width="100%">
 
 ## Dataset
 
+[MNIST](https://en.wikipedia.org/wiki/MNIST_database) as series of images as sequencial inputs.
 <img src="./fig/digit3.png" width="30%">
+<img src="./fig/digit3_series.png" width="100%">
 
-[UCF101](http://crcv.ucf.edu/data/UCF101.php) has total 13,320 videos from 101 actions. Videos have various time lengths (frames) and different 2d image size; the shortest is 28 frames. 
 
 ### Prerequisites
 - [Python 3.6](https://www.python.org/)
