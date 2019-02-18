@@ -39,11 +39,11 @@ MRNN_detect_alien_signal.ipynb
 ```
 
 ## Results & Interpretations
-1. Take *k=4* for MNIST. 
+1. Take *k=4* LSTM for MNIST. 
 
 - In figure of *q_z(t)*, the horizontal axis is time, vertical axis shows which LSTM to look. The color palette indicates the probability of the LSTM being used. 
 
-- In figure of *z(t)*, the yellow color indicates which LSTM was actually used by Gumbel softmax sampling.
+- In figure of *z(t)*, the yellow color indicates which LSTM was actually used (by Gumbel softmax sampling).
 <img src="./fig/qz_t_digit3.png" width="100%">
 
 
@@ -51,13 +51,21 @@ MRNN_detect_alien_signal.ipynb
 <img src="./fig/digit9_transition.png" width="60%">
 
 
-- Take *k=4* for alien signal (binary) classification
+2. Take *k=4* LSTM for alien signal (binary) classification
 - **Non-alien signal**
+- In 
 <img src="./fig/qz_t_wave0.png" width="100%">
 
-- **alien signal**
-Over all probability of choosing each LSTM
+
+- **Non-alien signal**
+- In 
+
 <img src="./fig/qz_t_wave1.png" width="100%">
+
+
+- Over all probability of which LSTM being chosen
+<img src="./fig/digit9_transition.png" width="60%">
+
 
 
 ## Improvements
