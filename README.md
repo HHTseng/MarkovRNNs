@@ -3,13 +3,17 @@
 This repository is the PyTorch implementation of [Markov Recurrent Neural Networks](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git) with two temporal datasets as quick demonstration.
 
 ## Architecture
-**Paper**: [Markov Recurrent Neural Networks (MRNN)](https://ieeexplore.ieee.org/document/8517074)
+- **Paper**: [Markov Recurrent Neural Networks (MRNN)](https://ieeexplore.ieee.org/document/8517074)
 
 <img src="./fig/NTMCell.png" width="100%">
 
 
-**Heuristic explanation**:
-MRNN is built as a deep learning model for learning time series. The main idea is to create several **parallel [RNNs]**(https://en.wikipedia.org/wiki/Recurrent_neural_network) [(LSTMs)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to learn time dependence of data. This is particularly useful for NLP, weather, or stock price prediction.
+- **Heuristic explanation**:
+MRNN is built as a deep learning model for learning time series, such as NLP, weather, and stock price prediction. The main idea is to create several *parallel* [RNNs](https://en.wikipedia.org/wiki/Recurrent_neural_network) [(LSTMs)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to learn the time dependence of the data simultaneously. Since if data has complex temporal structures (behaviour), single RNN may not be enough to carry out the pattern. *k* parallel RNNs (*k=1,2,3,...*) read same input signal at the same time, each learns different character of data. Then another latent variable *z* (also trained by networks) will determine when and which LSTM should be listened. 
+
+The choosing mechanism itself is a process stochastic modeling of transitions between *k* LSTMs.
+
+
 
 
 ## Dataset
