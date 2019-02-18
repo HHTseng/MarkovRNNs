@@ -39,34 +39,31 @@ MRNN_detect_alien_signal.ipynb
 ```
 
 ## Results & Interpretations
-1. Take *k=4* LSTM for MNIST. 
+1. **Take *k=4* LSTM for MNIST.**
 
 - In figure of *q_z(t)*, the horizontal axis is time, vertical axis shows which LSTM to look. The color palette indicates the probability of the LSTM being used. 
 
 - In figure of *z(t)*, the yellow color indicates which LSTM was actually used (by Gumbel softmax sampling).
 <img src="./fig/qz_t_digit3.png" width="100%">
 
-
 - Over all probability of which LSTM being chosen
-<img src="./fig/digit9_transition.png" width="60%">
+<img src="./fig/digit9_transition.png" width="55%">
 
 
-2. Take *k=4* LSTM for alien signal (binary) classification
-- **Non-alien signal**
-- In 
+2. **Take *k=4* LSTM for alien signal (binary) classification**
+- Non-alien signal
+- Fig *q_z(t)* & *z(t)* slightly shows periodicity
 <img src="./fig/qz_t_wave0.png" width="100%">
 
 
-- **Non-alien signal**
-- In 
-
+- Alien signal (maybe say Hi or invasion)
+- Fig *q_z(t)* & *z(t)* use 4 LSTMs to detect irregular wave forms
 <img src="./fig/qz_t_wave1.png" width="100%">
 
-
 - Over all probability of which LSTM being chosen
-<img src="./fig/digit9_transition.png" width="60%">
+<img src="./fig/digit9_transition.png" width="55%">
 
 
 
 ## Improvements
-I extended the code in Pytorch such that the Markov RNN can have more than 1 hidden layers, where it was restricted to 1 hidden layer in the original code of [Tensorflow version](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git).
+This code in Pytorch is extended such that the Markov RNN can have more than 1 hidden layers, where it was restricted to only 1 hidden layer in the original code of [Tensorflow version](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git).
