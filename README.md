@@ -40,10 +40,14 @@ MRNN_detect_alien_signal.ipynb
 ```
 
 ## Results & Interpretations
-Take *k=4* to learn MNIST
+-Take *k=4* for MNIST
 <img src="./fig/qz_t_digit3.png" width="100%">
-<img src="./fig/digit9_transition.png" width="100%">
+<img src="./fig/digit9_transition.png" width="40%">
 
+
+-Take *k=4* for alien signal (binary) classification 
+<img src="./fig/qz_t_digit3.png" width="100%">
+<img src="./fig/digit9_transition.png" width="40%">
 
 
 ## Improvements
