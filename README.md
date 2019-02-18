@@ -9,10 +9,7 @@ This repository is the PyTorch implementation of [Markov Recurrent Neural Networ
 
 
 - **Heuristic explanation**:
-MRNN is built as a deep learning model for learning time series, such as NLP, weather, and stock price prediction. The main idea is to create several *parallel* [RNNs](https://en.wikipedia.org/wiki/Recurrent_neural_network) [(LSTMs)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to learn the time dependence of the data simultaneously. Since if data has complex temporal structures (behaviour), single RNN may not be enough to carry out the pattern. *k* parallel RNNs (*k=1,2,3,...*) read same input signal at the same time, each learns different character of data. Then another latent variable *z* (also trained by networks) will determine when and which LSTM should be listened. 
-
-The choosing mechanism itself is a process stochastic modeling of transitions between *k* LSTMs.
-
+MRNN is built as a deep learning model for time series, such as NLP, weather, and stock price prediction. The main idea is to create several *parallel* [RNNs](https://en.wikipedia.org/wiki/Recurrent_neural_network) [(LSTMs)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to learn the time dependence of the data simultaneously. If data has complex temporal structures (behaviour), single RNN may not be enough to carry out the pattern. *k* parallel RNNs (*k=1,2,3,...*) read same input signal at the same time, each learns different character of data. Then another latent variable *z* (also trained by networks) will determine when and which LSTM should be listened for attaining learning task. The choosing mechanism by *z* itself is a process stochastic modeling of transitions between *k* LSTMs based on Markov property, and hence the name MRNN.
 
 
 
@@ -45,6 +42,8 @@ MRNN_detect_alien_signal.ipynb
 ```
 
 ## Results & Interpretations
+
+<img src="./fig/qz_t_digit3.png" width="100%">
 
 
 ## Improvements
