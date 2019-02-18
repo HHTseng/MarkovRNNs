@@ -17,7 +17,6 @@ MRNN is built as a deep learning model for time series, such as NLP, weather, an
 
 - [**MNIST**](https://en.wikipedia.org/wiki/MNIST_database) viewed in series as sequential input:
 <img src="./fig/image3.png" width="100%">
-Laten transitions between *k=4* LSTMs
 
 - **Artificial alien signals**: I am imagining we are able to recognize radio signals sent by aliens from the sky such as [SETI](https://setiathome.berkeley.edu/), where I generated two kinds of wave forms for Markov RNN to distinguish:
 
@@ -40,17 +39,21 @@ MRNN_detect_alien_signal.ipynb
 ```
 
 ## Results & Interpretations
--Take *k=4* for MNIST
+- Take *k=4* for MNIST
 <img src="./fig/qz_t_digit3.png" width="100%">
+
 
 Over all probability of choosing each LSTM
 <img src="./fig/digit9_transition.png" width="60%">
 
 
--Take *k=4* for alien signal (binary) classification 
-<img src="./fig/qz_t_digit3.png" width="100%">
+- Take *k=4* for alien signal (binary) classification
+- **Non-alien signal**
+<img src="./fig/qz_t_wave0.png" width="100%">
+
+- **alien signal**
 Over all probability of choosing each LSTM
-<img src="./fig/digit9_transition.png" width="40%">
+<img src="./fig/qz_t_wave1.png" width="100%">
 
 
 ## Improvements
