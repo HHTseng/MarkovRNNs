@@ -39,7 +39,7 @@ MRNN_detect_alien_signal.ipynb
 ```
 
 ## Results & Interpretations
-- Take *k=4* for MNIST
+- Take *k=4* for MNIST. In figure of *q_z(t)*, the horizontal axis is time, vertical axis shows which LSTM to look. The color palette indicates the probability of the LSTM being used. In figure of *z(t)*, the yellow color indicates which was actually used by Gumbel softmax sampling.
 <img src="./fig/qz_t_digit3.png" width="100%">
 
 
