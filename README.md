@@ -9,9 +9,9 @@ This repository is the PyTorch implementation of [Markov Recurrent Neural Networ
 
 ## Dataset
 
-[MNIST](https://en.wikipedia.org/wiki/MNIST_database) as series of images as sequencial inputs.
-<img src="./fig/digit3.png" width="30%">
-<img src="./fig/digit3_series.png" width="100%">
+[MNIST](https://en.wikipedia.org/wiki/MNIST_database) viewed in series as sequential input.
+<img src="./fig/image3.png" width="100%">
+
 
 
 ### Prerequisites
