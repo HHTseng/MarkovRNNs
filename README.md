@@ -13,15 +13,13 @@ MRNN is built as a deep learning model for time series, such as NLP, weather, an
 
 
 
-## Dataset
+## Datasets
 
-1. [MNIST](https://en.wikipedia.org/wiki/MNIST_database) viewed in series as sequential input:
-
-
+- [**MNIST**](https://en.wikipedia.org/wiki/MNIST_database) viewed in series as sequential input:
 <img src="./fig/image3.png" width="100%">
+Laten transitions between *k=4* LSTMs
 
-
-2. Artificial alien signals: I am imagining we are able to recognize radio signals sent by aliens from the sky such as [SETI](https://setiathome.berkeley.edu/), where I generated two kinds of wave forms for Markov RNN to distinguish:
+- **Artificial alien signals**: I am imagining we are able to recognize radio signals sent by aliens from the sky such as [SETI](https://setiathome.berkeley.edu/), where I generated two kinds of wave forms for Markov RNN to distinguish:
 
 <img src="./fig/alien_wave.png" width="100%">
 
@@ -42,8 +40,10 @@ MRNN_detect_alien_signal.ipynb
 ```
 
 ## Results & Interpretations
-
+Take *k=4* to learn MNIST
 <img src="./fig/qz_t_digit3.png" width="100%">
+<img src="./fig/digit9_transition.png" width="100%">
+
 
 
 ## Improvements
