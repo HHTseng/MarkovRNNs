@@ -48,7 +48,7 @@ MRNN_detect_alien_signal.ipynb
 - In figure of *z(t)*, the yellow color indicates which LSTM was actually used (by Gumbel softmax sampling).
 <img src="./fig/qz_t_digit3.png" width="100%">
 
-- Over all probability of which LSTM being chosen **[Left]: digit 7**, **[right]: digit 9**
+- Over all probability of which LSTM being chosen. **[Left]: digit 7**, **[right]: digit 9**
 <img src="./fig/digit_transitions.png" width="100%">
 
 
@@ -59,7 +59,7 @@ MRNN_detect_alien_signal.ipynb
 
 
 - Alien signal (maybe say Hi or invasion)
-- Fig *q_z(t)* & *z(t)* use 4 LSTMs to detect irregular wave forms
+- Fig *q_z(t)* & *z(t)* use 4 LSTMs to detect irregular wave form from aliens.
 <img src="./fig/qz_t_wave1.png" width="100%">
 
 - Over all probability of which LSTM being chosen. **[Left]: non-alien signal**, **[right]: alien signal**
