@@ -3,15 +3,21 @@
 This repository is the PyTorch implementation of [Markov Recurrent Neural Networks](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git) with two temporal datasets as quick demonstration.
 
 ## Architecture
-**Paper**:[Markov Recurrent Neural Networks](https://ieeexplore.ieee.org/document/8517074)
+**Paper**: [Markov Recurrent Neural Networks](https://ieeexplore.ieee.org/document/8517074)
 
 <img src="./fig/NTMCell.png" width="100%">
 
 ## Dataset
 
-[MNIST](https://en.wikipedia.org/wiki/MNIST_database) viewed in series as sequential input.
+1. [MNIST](https://en.wikipedia.org/wiki/MNIST_database) viewed in series as sequential input.
+
+
 <img src="./fig/image3.png" width="100%">
 
+
+2. Artificial alien signals: I am imagining we are able to recognize radio signals sent by aliens from the sky [SETI](https://setiathome.berkeley.edu/), where I generated two kinds of wave forms for distinguish two patterns:
+
+<img src="./fig/alien_wave.png" width="100%">
 
 
 ### Prerequisites
