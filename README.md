@@ -68,4 +68,4 @@ MRNN_detect_alien_signal.ipynb
 
 
 ## Improvements
-This code of Pytorch is extended such that the Markov RNN can have more than 1 hidden layers in LSTMs, where it was restricted to only 1 hidden layer in the original code of [Tensorflow version](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git).
+This code of Pytorch is extended such that the Markov RNN can have more than 1 hidden layers in every LSTM, where it was restricted to only 1 hidden layer in the original code of [Tensorflow version](https://github.com/NCTUMLlab/Che-Yu-Kuo-MarkovRNN.git).
